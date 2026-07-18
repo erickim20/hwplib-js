@@ -1,0 +1,64 @@
+{
+  "name": "hwplib-js",
+  "version": "0.1.0",
+  "description": "Isomorphic TypeScript library to read and write HWP (Hangul Word Processor) files — a faithful port of hwplib 1.1.10",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "RaumLabs",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && node scripts/minify-dist.mjs dist",
+    "build:debug": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "cfb": "^1.2.2",
+    "fflate": "^0.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "esbuild": "^0.28.1",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "keywords": [
+    "hwp",
+    "hangul",
+    "hwplib",
+    "word-processor",
+    "parser",
+    "writer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickim20/hwplib-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erickim20/hwplib-js/issues"
+  },
+  "homepage": "https://github.com/erickim20/hwplib-js#readme"
+}

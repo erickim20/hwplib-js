@@ -1,0 +1,14 @@
+hwplib-js
+Copyright 2026 RaumLabs
+
+This product is a derivative work that ports the following library to TypeScript:
+
+  hwplib (https://github.com/neolord0/hwplib)
+  Copyright neolord0
+  Licensed under the Apache License, Version 2.0
+
+The original hwplib bundles portions of Apache POI (POIFS/HPSF) for OLE2 compound
+file handling. In this port that layer is instead provided at runtime by:
+
+  js-cfb  (https://github.com/SheetJS/js-cfb)   — Apache-2.0
+  fflate  (https://github.com/101arrowz/fflate) — MIT
