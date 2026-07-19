@@ -1,5 +1,7 @@
 # hwplib-js
 
+**English** · [한국어](README.ko.md)
+
 Isomorphic TypeScript engine for reading and writing **HWP** (Hangul Word Processor, `.hwp` v5)
 files. One pure-JS codebase, no native addons — runs unchanged in the **browser**, **Electron**,
 and **Node**. `Uint8Array` in, `Uint8Array` out.
