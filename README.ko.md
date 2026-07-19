@@ -14,6 +14,8 @@
 > [`cfb`](https://github.com/SheetJS/js-cfb)와 [`fflate`](https://github.com/101arrowz/fflate)에
 > 위임합니다. 전체 저작자 표시는 [`NOTICE`](NOTICE)를 참고하세요.
 
+> 본 제품은 한글과컴퓨터의 HWP 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다.
+
 ## 설치
 
 ```bash

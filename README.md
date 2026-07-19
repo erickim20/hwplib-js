@@ -13,6 +13,10 @@ and **Node**. `Uint8Array` in, `Uint8Array` out.
 > DEFLATE, this port delegates those to [`cfb`](https://github.com/SheetJS/js-cfb) and
 > [`fflate`](https://github.com/101arrowz/fflate). See [`NOTICE`](NOTICE) for full attribution.
 
+> 본 제품은 한글과컴퓨터의 HWP 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다.
+> *(This product was developed by referring to the HWP document file (.hwp) specification
+> publicly released by Hancom Inc.)*
+
 ## Install
 
 ```bash
